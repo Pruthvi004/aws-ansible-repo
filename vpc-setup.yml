@@ -94,7 +94,10 @@
      ec2_vpc_igw:
        vpc_id: "{{vpcout.vpc.id}}"
        region: "{{region}}"
-       state: "{{state}}"
-       resourse_tags:
+       region: "{{state}}"
+       resource_tags:
          Name: vprofile-IGW
      register: igw_out
+
+
+

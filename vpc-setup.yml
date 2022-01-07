@@ -37,8 +37,8 @@
        state: "{{state}}"
        cidr: "{{PubSub2Cidr}}"
        map_public: yes
-        resource_tags:
-          Name: vprofile-pubsub2
+       resource_tags:
+         Name: vprofile-pubsub2
      register: pubsub2out
 
    - name: Create public subnet3 in zone 3

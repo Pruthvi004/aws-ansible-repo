@@ -30,7 +30,7 @@
      register: pubsub1out
 
    - name: Create public subnet2 in zone 2
-        ec2_vpc_subnet:
+       ec2_vpc_subnet:
           vpc_id: "{{vpcout.vpc.id}}"
           region: "{{region}}"
           az: "{{zone2}}"
@@ -39,7 +39,7 @@
           map_public: yes
           resource_tags:
             Name: vprofile-pubsub2
-        register: pubsub2out
+       register: pubsub2out
 
    - name: Create public subnet3 in zone 3
         ec2_vpc_subnet:

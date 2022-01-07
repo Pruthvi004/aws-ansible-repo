@@ -29,7 +29,7 @@
          Name: vprofile-pubsub1
      register: pubsub1out
 
-    - name: Create public subnet2 in zone 2
+   - name: Create public subnet2 in zone 2
         ec2_vpc_subnet:
           vpc_id: "{{vpcout.vpc.id}}"
           region: "{{region}}"
@@ -41,7 +41,7 @@
             Name: vprofile-pubsub2
         register: pubsub2out
 
-    - name: Create public subnet3 in zone 3
+   - name: Create public subnet3 in zone 3
         ec2_vpc_subnet:
           vpc_id: "{{vpcout.vpc.id}}"
           region: "{{region}}"

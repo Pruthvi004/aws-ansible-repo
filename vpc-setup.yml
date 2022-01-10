@@ -99,7 +99,7 @@
          Name: vprofile-IGW
      register: igw_out
 
-   - name: Setup Public Subnets Route Tables
+   - name: Setr up Public Subnets Route Tables
      ec2_vpc_route_tables:
        vpc_id: "{{vpcout.vpc.id}}"
        region: "{{region}}"

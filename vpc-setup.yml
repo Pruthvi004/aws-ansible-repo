@@ -99,7 +99,4 @@
          Name: vprofile-IGW
      register: igw_out
 
-  - name: Set up public subnet route tables
-    ec2_vpc_route_table:
-      
-      
+  
